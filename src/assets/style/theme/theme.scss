@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import '../scss-utils/_variables.scss';
+
+// $border-radius: 0.25rem;
+$theme-colors: (
+  "primary":    $primary-color,
+  "secondary":  $secondary-color,
+  "success":    $success-color,
+  "info":       $info-color,
+  "warning":    $warning-color,
+  "danger":     $danger-color,
+  "light":      $light-color,
+  "dark":       $dark-color
+);
+
+$font-family-base: 'Poppins', sans-serif;

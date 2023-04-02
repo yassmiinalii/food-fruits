@@ -1,0 +1,39 @@
+@import "../scss-utils/_variables.scss";
+.red {
+  color: $red;
+}
+
+.green {
+  color: $primary-color;
+}
+
+.gray{
+  color: $gray3;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white{
+  color: white;
+}
+// .success {
+//   color: $green;
+//   background-color: $green-light;
+//   padding: 10px 18px;
+// }
+
+// .error {
+//   color: $red;
+//   background-color: $red-light;
+//   padding: 10px 18px;
+
+// }
+
+// .status{
+//   max-width: 3.5rem;
+//   text-align: center;
+// }

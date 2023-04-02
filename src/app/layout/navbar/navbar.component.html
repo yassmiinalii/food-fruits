@@ -1,0 +1,83 @@
+  <!-- responsive icon -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+      <img src="../../../assets/imgs/logo-navbar.svg" alt="logo">
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="displayHiddenContent()" data-bs-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- navbar collapse -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="search-container m-auto col-12 col-md-6" #search role="search">
+        <div class="icon-search-container">
+          <i class="bi bi-search"></i>
+        </div>
+        <input class="form-control input-serach " type="search" placeholder="what are you looking for" aria-label="Search">
+     </div >
+
+    <div class="location-language">
+      <div class="location mt-2 mt-md-0">
+        <span class="deliver-to-title">Deliver to</span>
+        <div class="location-title-container">
+          <i class="bi bi-geo-alt"></i>
+          <span>Algahraa(office)</span>
+          <i class="bi bi-caret-down-fill"></i>
+        </div>
+      </div>
+      <div class="language">
+        <svg-icon src="../../../assets/icons/language-icon-en.svg"  [svgStyle]="{ 'width.px':22 }" ></svg-icon>
+        <span class="ps-2">English</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</nav>
+<nav class="bottom-section"  [class.display-nav]="hiddenContent">
+    <div class="container bottom-nav">
+      <div class="nav-catagories-container" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="router-link-active">
+        <div class="nav-catagories-icon"  >
+          <svg-icon src="../../../assets/icons/nav-category-icon.svg"   ></svg-icon>
+        </div>
+        <a class="category-dropdown ps-2"    >
+          catagories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Action</a></li>
+          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Something else here</a></li>
+        </ul>
+
+      </div>
+        <ul class=" navbar-nav menu-items  white mb-2 mb-lg-0" >
+          <li class="nav-item" *ngFor="let menuItem of menuItems">
+            <a class="nav-link active"  aria-current="page" [routerLink]="[menuItems.path]" routerLinkActive="router-link-active" >{{menuItem.title}}</a>
+          </li>
+        </ul>
+
+        <div class="cart-fav-profile-icon-container">
+          <div class="cart-icon nav-icon ">
+            <i class="bi bi-cart" ></i>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">Cart</div>
+          </div>
+          <div class="fav-icon nav-icon ">
+            <i class="bi bi-heart"></i>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">WashList</div>
+          </div>
+          <div class="profile-icon nav-icon ">
+            <i class="bi bi-person"></i>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">Login</div>
+          </div>
+        </div>
+      </div>
+</nav>
+
+
+<!-- <div class="collapse" >
+
+  <div class="bg-dark p-4" search>
+
+  </div>
+</div> -->
