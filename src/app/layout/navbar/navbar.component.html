@@ -1,10 +1,10 @@
-  <!-- responsive icon -->
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
   <div class="container">
     <a class="navbar-brand" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
       <img src="../../../assets/imgs/logo-navbar.svg" alt="logo">
      </a>
+     <!-- responsive icon -->
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="displayHiddenContent()" data-bs-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,70 +14,62 @@
         <div class="icon-search-container">
           <i class="bi bi-search"></i>
         </div>
-        <input class="form-control input-serach " type="search" placeholder="what are you looking for" aria-label="Search">
+        <input class="form-control input-serach " type="search" placeholder="{{'WHAT_ARE_YOU_LOOKING_FOR' | translate}}" aria-label="Search">
      </div >
 
     <div class="location-language">
       <div class="location mt-2 mt-md-0">
-        <span class="deliver-to-title">Deliver to</span>
+        <span class="deliver-to-title">{{'DELIVER_TO' | translate}}</span>
         <div class="location-title-container">
           <i class="bi bi-geo-alt"></i>
           <span>Algahraa(office)</span>
           <i class="bi bi-caret-down-fill"></i>
         </div>
       </div>
-      <div class="language">
-        <svg-icon src="../../../assets/icons/language-icon-en.svg"  [svgStyle]="{ 'width.px':22 }" ></svg-icon>
-        <span class="ps-2">English</span>
+      <div  type="button" (click)="changeLanguage(currentLanguage)" class="language">
+        <svg-icon *ngIf="currentLanguage === 'en'" src="../../../assets/icons/language-icon-en.svg"  [svgStyle]="{ 'width.px':22 }" ></svg-icon>
+        <svg-icon *ngIf="currentLanguage === 'ar'" src="../../../assets/icons/language-icon-ar.svg"  [svgStyle]="{ 'width.px':22 }" ></svg-icon>
+        <span class="px-2">{{"LANGUAGE" | translate}}</span>
       </div>
     </div>
     </div>
   </div>
 </nav>
-<nav class="bottom-section"  [class.display-nav]="hiddenContent">
+<nav class="bottom-section" [class.display-nav]="hiddenContent">
     <div class="container bottom-nav">
+      <div class="categories-menu-container ">
       <div class="nav-catagories-container" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="router-link-active">
         <div class="nav-catagories-icon"  >
           <svg-icon src="../../../assets/icons/nav-category-icon.svg"   ></svg-icon>
         </div>
-        <a class="category-dropdown ps-2"    >
-          catagories
+        <a class="category-dropdown px-2"    >
+          {{'CATEGORIES' | translate}}
         </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Action</a></li>
-          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Something else here</a></li>
         </ul>
 
       </div>
-        <ul class=" navbar-nav menu-items  white mb-2 mb-lg-0" >
+        <ul class="navbar-nav menu-items  white mb-2 mb-lg-0" >
           <li class="nav-item" *ngFor="let menuItem of menuItems">
-            <a class="nav-link active"  aria-current="page" [routerLink]="[menuItems.path]" routerLinkActive="router-link-active" >{{menuItem.title}}</a>
+            <a class="nav-link active"  aria-current="page" [routerLink]="[menuItems.path]" routerLinkActive="router-link-active" >{{menuItem.title[translate.currentLang] }}</a>
           </li>
         </ul>
-
+      </div>
         <div class="cart-fav-profile-icon-container">
           <div class="cart-icon nav-icon ">
             <i class="bi bi-cart" ></i>
-            <div class="icon-text" [class.display-icons-text]="hiddenContent">Cart</div>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'CART'|translate}}</div>
           </div>
           <div class="fav-icon nav-icon ">
             <i class="bi bi-heart"></i>
-            <div class="icon-text" [class.display-icons-text]="hiddenContent">WashList</div>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'FAVORITES'|translate}}</div>
           </div>
           <div class="profile-icon nav-icon ">
             <i class="bi bi-person"></i>
-            <div class="icon-text" [class.display-icons-text]="hiddenContent">Login</div>
+            <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'LOGIN'| translate}}</div>
           </div>
         </div>
       </div>
 </nav>
 
-
-<!-- <div class="collapse" >
-
-  <div class="bg-dark p-4" search>
-
-  </div>
-</div> -->

@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/style/theme.scss",
+              "src/assets/style/theme/theme.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": [

@@ -9,11 +9,11 @@ export class NavbarServiceService {
 
   //make menuItems title object c en and ar
   menuItems = [
-   {title: 'Home', path: '/home'},
-   {title: 'Brands', path: '/brands'},
-   {title: 'Best sellers', path: '/bestSellers'},
-   {title: 'Future products', path: '/futureProducts'},
-   {title: 'Best Offers', path: '/bestOffers'},
+    {title: {ar: 'الرئيسية', en: 'Home'}, path: '/home'},
+    {title: {ar: 'العلامات التجارية', en: 'Brands'}, path: '/brands'},
+    {title: {ar: 'الأكثر مبيعًا', en: 'Best sellers'}, path: '/bestSellers'},
+    {title: {ar: 'المنتجات المستقبلية', en: 'Future products'}, path: '/futureProducts'},
+    {title: {ar: 'أفضل العروض', en: 'Best Offers'}, path: '/bestOffers'},
   ];
 
   getMenuItems(){
