@@ -1,4 +1,4 @@
-import { NavbarServiceService } from './navbar-service.service';
+import { NavbarServiceService } from '../services/navbar-service.service';
 import { LayoutModule } from './../layout.module';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';

@@ -8,5 +8,11 @@
   "SIGN_UP": "إنشاء حساب",
   "LANGUAGE": "العربية",
   "LANG": "ar",
-  "DIR": "rtl"
+  "DIR": "rtl",
+  "banner-title": "توصيل البقالة في نفس اليوم",
+  "banner-text": "مع التتبع والتحديثات الفورية",
+  "btn-explore": "استكشف",
+  "ALL": "الكل",
+  "ITEMS": "عنصر",
+  "EXPLORE_CATEGORIES": "استكشف الأقسام"
 }

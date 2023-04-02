@@ -1,0 +1,50 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 600;
+  color: $black;
+}
+
+.categories-title-list{
+
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+
+  .category-title-item {
+    font-size: 14px;
+    color: $black;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 4px;
+    &:hover {
+      background-color: $primary-color-light;
+    }
+  }
+  .active{
+    color: $primary-color;
+  }
+}
+.categories-list{
+  // overflow-x: scroll;
+  //scroll horizontal only
+
+  // display: flex;
+  // gap: 1rem;
+  // margin-top: 1rem;
+  // margin-bottom: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+}

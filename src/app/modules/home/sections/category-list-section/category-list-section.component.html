@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="title-container mb-4">
+    <h3 class="title"> {{'EXPLORE_CATEGORIES' | translate}} </h3>
+    <div class="categories-title-list">
+      <span class="category-title-item " [ngClass]="{'active': selectedCategory === 0}" (click)="selectCategory(0)">{{'ALL' | translate}}</span>
+      <ng-container *ngIf="categoriesList" >
+        <span class="category-title-item" *ngFor="let category of categoriesList" (click)="selectCategory(category.id)" [ngClass]="{'active': category.id === selectedCategory}">
+         {{ category?.title[translate.currentLang]}}
+        </span>
+      </ng-container>
+    </div>
+  </div>
+  <div class="categories-list row flex-nowrap">
+    <div class="col" *ngFor="let category of categoriesList">
+      <app-category-item [category]="category"></app-category-item>
+    </div>
+  </div>
+</div>

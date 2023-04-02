@@ -8,5 +8,12 @@
   "SIGN_UP": "Sign up",
   "LANGUAGE": "English",
   "LANG": "en",
-  "DIR": "ltr"
+  "DIR": "ltr",
+  "banner-title": "same day delivery of grocery",
+  "banner-text": "with real time tracking & updates",
+  "btn-explore": "Explore",
+  "ALL": "All",
+  "ITEMS": "Items",
+  "EXPLORE_CATEGORIES": "Explore Categories"
+
 }

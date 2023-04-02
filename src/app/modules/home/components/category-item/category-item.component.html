@@ -1,0 +1,12 @@
+<div class="category-card" *ngIf="category">
+  <div class="category-card__img">
+    <img  class="category-card__img" src="{{'../../../../../assets/imgs/categories'+category.imagePath}}" alt="category-1" />
+  </div>
+  <div class="category-card__content">
+    <h3 class="category-card__title">{{category.title[translate.currentLang]}}</h3>
+    <p class="category-card__total-items">
+      <span class="category-card__total-items--number">{{category.totalItems}}</span>
+      <span class="category-card__total-items--text"> {{'ITEMS'| translate}}</span>
+    </p>
+  </div>
+</div>
