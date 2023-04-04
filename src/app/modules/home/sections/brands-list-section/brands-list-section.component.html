@@ -1,0 +1,14 @@
+<div class="container my-5">
+
+    <div class="title-home-section-container">
+      <h3 class="home-section-title"> {{"Brands" | translate}} </h3>
+      <button type="button" class="btn btn-outline-primary btn-sm">
+        {{"View All" | translate}}
+      </button>
+    </div>
+  <div class="categories-list row flex-nowrap mt-4">
+    <div class="col-2" *ngFor="let brand of brandsList">
+      <app-brand-item-card [brand]="brand"></app-brand-item-card>
+    </div>
+  </div>
+</div>

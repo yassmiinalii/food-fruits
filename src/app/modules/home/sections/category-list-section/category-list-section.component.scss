@@ -2,23 +2,30 @@
 .title-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  // @media screen and (max-width: 768px) {
+  //   flex-direction: column;
+
+  // }
 }
 
-.title {
-  font-weight: 600;
-  color: $black;
-}
 
 .categories-title-list{
 
   display: flex;
   gap: .8rem;
   align-items: center;
+  overflow-x: scroll;
+
 
   .category-title-item {
     font-size: 14px;
     color: $black;
     text-transform: capitalize;
+    text-align: start;
+    display: inline-block !important;
+    flex-wrap: nowrap;
     cursor: pointer;
     padding: 4px;
     &:hover {

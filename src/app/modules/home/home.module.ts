@@ -8,13 +8,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CategoryItemComponent } from './components/category-item/category-item.component';
 import { CategoryListSectionComponent } from './sections/category-list-section/category-list-section.component';
+import { BrandsListSectionComponent } from './sections/brands-list-section/brands-list-section.component';
+import { BrandItemCardComponent } from './components/brand-item-card/brand-item-card.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     HeaderComponent,
     CategoryItemComponent,
-    CategoryListSectionComponent
+    CategoryListSectionComponent,
+    BrandsListSectionComponent,
+    BrandItemCardComponent
   ],
   imports: [
     CommonModule,

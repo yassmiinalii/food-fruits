@@ -1,0 +1,13 @@
+.home-section-title{
+  font-weight: 600;
+  color: $black;
+}
+
+.title-home-section-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
