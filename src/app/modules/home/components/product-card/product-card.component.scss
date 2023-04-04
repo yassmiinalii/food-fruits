@@ -1,0 +1,113 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 300px;
+  background: #FFFFFF;
+  border-radius: 6px;
+
+  .product-image {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .product-info {
+    padding: 20px;
+
+    .product-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      margin-bottom: 10px;
+
+      .offer-price {
+        color: $primary-color;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .regular-price {
+        color: $gray2;
+        text-decoration: line-through;
+        font-size: 1rem;
+      }
+    }
+
+    .product-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .quantity {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        // background-color: $primary-color-light;
+        // border-radius: 0.375rem;;
+
+        // button {
+        //   background-color: transparent;
+        //   border: none;
+        //   font-size: 1.2rem;
+        //   padding: 5px;
+        //   cursor: pointer;
+        // }
+
+        .minus{
+          padding: 0.4rem 0.8rem
+        }
+        .plus{
+          padding: 0.4rem 0.8rem
+        }
+
+        input {
+          width: 50px;
+          text-align: center;
+          border: none;
+          background-color: transparent;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .add-to-cart,
+      .add-to-favorite {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0062cc;
+        }
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

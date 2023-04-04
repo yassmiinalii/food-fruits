@@ -10,6 +10,8 @@ import { CategoryItemComponent } from './components/category-item/category-item.
 import { CategoryListSectionComponent } from './sections/category-list-section/category-list-section.component';
 import { BrandsListSectionComponent } from './sections/brands-list-section/brands-list-section.component';
 import { BrandItemCardComponent } from './components/brand-item-card/brand-item-card.component';
+import { BestSellersSectionComponent } from './sections/best-sallers-section/best-sellers-section.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrandItemCardComponent } from './components/brand-item-card/brand-item-
     CategoryItemComponent,
     CategoryListSectionComponent,
     BrandsListSectionComponent,
-    BrandItemCardComponent
+    BrandItemCardComponent,
+    BestSellersSectionComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,

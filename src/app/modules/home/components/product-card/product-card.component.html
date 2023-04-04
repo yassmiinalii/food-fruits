@@ -1,0 +1,30 @@
+<div class="cad product-card ">
+  <div class="product-image">
+    <img src="https://via.placeholder.com/300x300" alt="Product Image">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">{{'Product Title' | translate}}</h3>
+    <div class="product-price">
+      <span class="offer-price">{{'KWD' | translate}} 10.00</span>
+      <span class="regular-price">{{'KWD' | translate}} 15.00</span>
+    </div>
+    <div class="product-options">
+      <div class="add-to-cart-container d-flex">
+        <div class="quantity">
+          <button class="minus btn btn-primary"(click)="  decreaseProductCount()" >-</button>
+          <input type="number" [value]="ProductAddToCartCount">
+          <button class="plus btn btn-primary" (click)="increaseProductCount()">+</button>
+        </div>
+        <button class="btn btn-outline-primary cart-icon px-4 py-2" (click)="changeCartStatus()">
+          <i class="bi bi-cart-plus-fill" *ngIf="!isAddedToCart"></i>
+          <i class="bi bi-cart-dash-fill" *ngIf="isAddedToCart" ></i>
+        </button>
+      </div>
+
+      <button class="btn btn-outline-secondary wishlist-icon px-3 py-2" (click)="changeWishlistStatus()">
+        <i class="bi bi-heart" *ngIf="!isAddedToWishlist"></i>
+        <i class="bi bi-heart-fill" *ngIf="isAddedToWishlist"></i>
+      </button>
+    </div>
+  </div>
+</div>
