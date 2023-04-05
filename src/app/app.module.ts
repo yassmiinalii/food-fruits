@@ -7,7 +7,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './modules/home/home.module';
+import { HttpClient } from '@angular/common/http';
+import { TranslateLoader, TranslateModule, TranslateStore } from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +25,18 @@ import { HomeModule } from './modules/home/home.module';
     NgbModule,
     SharedModule,
     LayoutModule,
-    HomeModule
+    HomeModule,
+    TranslateModule.forChild(
+      {
+        loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+      },
+      defaultLanguage: 'en'
+      },
 
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

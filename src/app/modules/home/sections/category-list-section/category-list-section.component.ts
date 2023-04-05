@@ -1,5 +1,5 @@
 import { CategoriesService } from '../../services/categories.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ICategory } from 'src/app/shared/models/iCategory';
 
@@ -10,13 +10,17 @@ import { ICategory } from 'src/app/shared/models/iCategory';
 })
 export class CategoryListSectionComponent implements OnInit {
 
+  @Input() scrollableX: boolean = false;
+
   selectedCategory: number = 0;
   categoriesList: ICategory[];
 
   constructor(
     private categoriesService: CategoriesService,
     public translate: TranslateService
-  ) { }
+  ) {
+
+   }
 
   ngOnInit(): void {
     this.getCategoriesList();

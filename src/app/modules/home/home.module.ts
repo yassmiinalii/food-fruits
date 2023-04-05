@@ -15,6 +15,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { AdBannerComponent } from './sections/ad-banner/ad-banner.component';
 import { FutureProductsComponent } from './sections/future-products/future-products.component';
 import { DownloadAppComponent } from './sections/download-app/download-app.component';
+import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DownloadAppComponent } from './sections/download-app/download-app.compo
     ProductCardComponent,
     AdBannerComponent,
     FutureProductsComponent,
-    DownloadAppComponent
+    DownloadAppComponent,
+    CategoriesPageComponent
   ],
   imports: [
     CommonModule,

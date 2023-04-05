@@ -19,17 +19,6 @@ export function createTranslateLoader(http: HttpClient) {
     RouterModule,
     HttpClientModule,
     AngularSvgIconModule.forRoot() ,
-    TranslateModule.forChild(
-      {
-        loader: {
-          provide: TranslateLoader,
-          useFactory: (createTranslateLoader),
-          deps: [HttpClient]
-      },
-      defaultLanguage: 'en'
-      },
-
-    )
   ],
   exports:[
     NgbAccordionModule,

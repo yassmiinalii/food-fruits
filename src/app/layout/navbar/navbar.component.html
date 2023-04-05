@@ -46,7 +46,12 @@
           {{'CATEGORIES' | translate}}
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Action</a></li>
+          <li>
+             <a class="dropdown-item" [routerLink]="['/categories']" routerLinkActive="router-link-active" >{{ "View All"| translate}}</a>
+          </li>
+          <li *ngFor="let category of categoriesList">
+             <a class="dropdown-item" [routerLink]="['/categories']" routerLinkActive="router-link-active" >{{category.title[translate.currentLang] }}</a>
+          </li>
         </ul>
 
       </div>

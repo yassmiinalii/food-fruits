@@ -1,3 +1,4 @@
+import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 import { CategoryListSectionComponent } from './sections/category-list-section/category-list-section.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,7 @@ const routes: Routes = [
   component: HomePageComponent
   },
   { path: 'categories',
-  component: CategoryListSectionComponent
+  component: CategoriesPageComponent
   },
 ];
 

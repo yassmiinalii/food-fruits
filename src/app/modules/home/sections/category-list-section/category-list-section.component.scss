@@ -44,10 +44,9 @@
   // gap: 1rem;
   // margin-top: 1rem;
   // margin-bottom: 1rem;
-  overflow-x: auto;
+
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -55,3 +54,9 @@
 
 
 }
+
+.scrollX{
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+

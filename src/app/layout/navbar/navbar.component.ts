@@ -1,7 +1,8 @@
 import { NavbarServiceService } from '../services/navbar-service.service';
-import { LayoutModule } from './../layout.module';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { CategoriesService } from 'src/app/modules/home/services/categories.service';
+import { ICategory } from 'src/app/shared/models/iCategory';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +11,12 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent  implements OnInit {
   hiddenContent: boolean ;
-
+  categoriesList: ICategory[];
   currentLanguage: string;
   menuItems: { title: { ar: string; en: string; }; path: string; }[];
   constructor (
     private NavbarServiceService: NavbarServiceService,
+    private categoriesService: CategoriesService,
     public translate: TranslateService
     ) {
       this.initCurrentLanguage();
@@ -22,6 +24,7 @@ export class NavbarComponent  implements OnInit {
 
   ngOnInit(): void {
     this.menuItems = this.NavbarServiceService.getMenuItems();
+    this.getCategoriesList();
   }
   initCurrentLanguage() {
 
@@ -48,6 +51,10 @@ export class NavbarComponent  implements OnInit {
     }
     this.translate.use(newLanguage);
     localStorage.setItem('language', newLanguage);
+  }
+
+  getCategoriesList(){
+    this.categoriesList =  this.categoriesService.getCategories();
   }
 
 }
