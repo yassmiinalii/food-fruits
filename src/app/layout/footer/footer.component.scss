@@ -1,0 +1,64 @@
+@import "../../../assets/style/scss-utils/_variables.scss";
+
+.footer-container {
+  border-top: 1px solid #BDBDBD;
+
+  .download-app-icon-container {
+    gap: 2rem;
+  }
+
+  .follow-us {
+    font-style: italic;
+  }
+
+  .grid-container {
+    align-items: start;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+
+    }
+  }
+
+  .links-section {
+    flex-direction: row;
+
+    .link-item {
+      font-size: 1rem;
+      line-height: 142.02%;
+      text-transform: capitalize;
+      color: $black;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+        // background-color: $primary-color-light;
+      }
+    }
+  }
+
+  .form-control {
+    background: #FFFFFF;
+    /* blue-black */
+
+    border: 0.25px solid #1F3152;
+    border-radius: 12px;
+    height: 48px;
+  }
+
+  .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    margin-left: -32px !important;
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+    z-index: 10000;
+    border: 0.25px solid #1F3152;
+
+  }
+  .input-group-text {
+    color: #FFFFFF;
+    background: #4E7F51;
+    border-radius: 12px;
+    padding: 0.5rem 2rem;
+  }
+}

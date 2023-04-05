@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
   <div class="container">
-    <a class="navbar-brand" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+    <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" >
       <img src="../../../assets/imgs/logo-navbar.svg" alt="logo">
      </a>
      <!-- responsive icon -->
@@ -52,7 +52,8 @@
       </div>
         <ul class="navbar-nav menu-items  white mb-2 mb-lg-0" >
           <li class="nav-item" *ngFor="let menuItem of menuItems">
-            <a class="nav-link active"  aria-current="page" [routerLink]="[menuItems.path]" routerLinkActive="router-link-active" >{{menuItem.title[translate.currentLang] }}</a>
+
+            <a class="nav-link active"  aria-current="page" [routerLink]="[menuItem.path]" routerLinkActive="router-link-active" >{{menuItem.title[translate.currentLang] }}</a>
           </li>
         </ul>
       </div>

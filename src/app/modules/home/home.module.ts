@@ -12,6 +12,9 @@ import { BrandsListSectionComponent } from './sections/brands-list-section/brand
 import { BrandItemCardComponent } from './components/brand-item-card/brand-item-card.component';
 import { BestSellersSectionComponent } from './sections/best-sallers-section/best-sellers-section.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { AdBannerComponent } from './sections/ad-banner/ad-banner.component';
+import { FutureProductsComponent } from './sections/future-products/future-products.component';
+import { DownloadAppComponent } from './sections/download-app/download-app.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     BrandsListSectionComponent,
     BrandItemCardComponent,
     BestSellersSectionComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    AdBannerComponent,
+    FutureProductsComponent,
+    DownloadAppComponent
   ],
   imports: [
     CommonModule,
