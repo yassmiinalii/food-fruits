@@ -16,6 +16,8 @@ import { AdBannerComponent } from './sections/ad-banner/ad-banner.component';
 import { FutureProductsComponent } from './sections/future-products/future-products.component';
 import { DownloadAppComponent } from './sections/download-app/download-app.component';
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
+import { BrandsPageComponent } from './pages/brands-page/brands-page.component';
+import { ProductListPageComponent } from './pages/product-list-page/product-list-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CategoriesPageComponent } from './pages/categories-page/categories-page
     AdBannerComponent,
     FutureProductsComponent,
     DownloadAppComponent,
-    CategoriesPageComponent
+    CategoriesPageComponent,
+    BrandsPageComponent,
+    ProductListPageComponent
   ],
   imports: [
     CommonModule,

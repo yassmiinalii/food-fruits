@@ -2,26 +2,34 @@
   <div class="product-image">
     <img src="https://via.placeholder.com/300x300" alt="Product Image">
   </div>
-  <div class="product-info">
+  <div class="product-info p-3">
     <h3 class="product-title">{{'Product Title' | translate}}</h3>
     <div class="product-price">
       <span class="offer-price">{{'KWD' | translate}} 10.00</span>
       <span class="regular-price">{{'KWD' | translate}} 15.00</span>
     </div>
-    <div class="product-options">
-      <div class="add-to-cart-container ">
-        <div class="quantity">
-          <button class="minus btn btn-primary"(click)="  decreaseProductCount()" >-</button>
+    <div class="product-options row gap-3 flex-nowrap  px-2">
+      <div class="add-to-cart-container col-10 row ">
+        <div class="quantity col-12 " *ngIf="isAddedToCart">
+          <button class="minus btn btn-primary" (click)="decreaseProductCount()" [disabled]="ProductAddToCartCount===1" >-</button>
           <input type="number" [value]="ProductAddToCartCount">
           <button class="plus btn btn-primary" (click)="increaseProductCount()">+</button>
+
+          <button class="btn cart-delete-btn p-1">
+            <i class="bi bi-trash-fill " (click)="changeAddToCartStatus()"></i>
+          </button>
+
+
+
         </div>
-        <button class="btn btn-outline-primary cart-icon px-4 py-2" (click)="changeCartStatus()">
-          <i class="bi bi-cart-plus-fill" *ngIf="!isAddedToCart"></i>
-          <i class="bi bi-cart-dash-fill" *ngIf="isAddedToCart" ></i>
+        <button *ngIf="!isAddedToCart" class="btn btn-outline-primary cart-icon py-2 col-12 " (click)="changeAddToCartStatus()">
+          <i class="bi bi-cart-plus-fill" ></i>
+         <span> {{'ADD_TO_CART' | translate}}</span>
+          <!-- <i class="bi bi-cart-dash-fill"  ></i> -->
         </button>
       </div>
 
-      <button class="btn btn-outline-secondary wishlist-icon px-3 py-2" (click)="changeWishlistStatus()">
+      <button class="btn btn-outline-secondary wishlist-icon  col-2 " (click)="changeAddToWishlistStatus()">
         <i class="bi bi-heart" *ngIf="!isAddedToWishlist"></i>
         <i class="bi bi-heart-fill" *ngIf="isAddedToWishlist"></i>
       </button>

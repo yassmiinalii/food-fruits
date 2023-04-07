@@ -36,6 +36,7 @@
     color: $primary-color;
   }
 }
+
 .categories-list{
   // overflow-x: scroll;
   //scroll horizontal only
@@ -45,11 +46,8 @@
   // margin-top: 1rem;
   // margin-bottom: 1rem;
 
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
+
 
 
 
@@ -58,5 +56,10 @@
 .scrollX{
   overflow-x: auto;
   flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 

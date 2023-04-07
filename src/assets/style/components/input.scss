@@ -4,3 +4,8 @@
   border-color: $primary-color;
   box-shadow: 0 0 0 0.25rem rgba(18, 147, 80, 0.25);
 }
+
+.form-check-input:checked{
+  background-color: $primary-color;
+  border-color: $primary-color;
+}

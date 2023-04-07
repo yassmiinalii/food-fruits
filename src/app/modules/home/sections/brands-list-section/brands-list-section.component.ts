@@ -1,5 +1,5 @@
 import { IBrand } from 'src/app/shared/models/iBrand';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-brands-list-section',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrandsListSectionComponent implements OnInit {
 
+  @Input() viewAll: boolean = false;
   brandsList : IBrand[] = [
     {
       id: "1",

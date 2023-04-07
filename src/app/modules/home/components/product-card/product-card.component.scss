@@ -20,7 +20,7 @@
   }
 
   .product-info {
-    padding: 20px;
+    // padding: 20px;
 
     .product-title {
       font-size: 1.2rem;
@@ -38,21 +38,28 @@
       }
 
       .regular-price {
-        color: $gray2;
+        color: $gray3;
         text-decoration: line-through;
         font-size: 1rem;
       }
     }
 
     .product-options {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      @media screen and (max-width: 768px) {
-
-        align-items: start ;
-
+      .btn {
+        // padding: 0.4rem 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
       }
+      // display: flex;
+      // align-items: center;
+      // justify-content: stretch;
+      // @media screen and (max-width: 768px) {
+
+      //   align-items: start ;
+
+      // }
 
 
 
@@ -88,6 +95,15 @@
             border: none;
           }
         }
+
+        .cart-delete-btn{
+          color: $gray3;
+          &:hover{
+            color: $primary-color !important;
+          }
+        }
+
+
       }
 
       .add-to-cart-container{

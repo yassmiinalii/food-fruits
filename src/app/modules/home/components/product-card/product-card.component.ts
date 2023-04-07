@@ -23,10 +23,11 @@ export class ProductCardComponent implements OnInit {
     }
   }
 
-  changeCartStatus() {
+  changeAddToCartStatus() {
     this.isAddedToCart = !this.isAddedToCart;
   }
-  changeWishlistStatus() {
+
+  changeAddToWishlistStatus() {
     this.isAddedToWishlist = !this.isAddedToWishlist;
   }
 
