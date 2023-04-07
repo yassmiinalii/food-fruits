@@ -31,4 +31,7 @@ export class ProductCardComponent implements OnInit {
     this.isAddedToWishlist = !this.isAddedToWishlist;
   }
 
+  navigate(){
+    console.log("navigate")
+  }
 }

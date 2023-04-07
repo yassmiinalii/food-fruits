@@ -18,6 +18,7 @@ import { DownloadAppComponent } from './sections/download-app/download-app.compo
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 import { BrandsPageComponent } from './pages/brands-page/brands-page.component';
 import { ProductListPageComponent } from './pages/product-list-page/product-list-page.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProductListPageComponent } from './pages/product-list-page/product-list
     DownloadAppComponent,
     CategoriesPageComponent,
     BrandsPageComponent,
-    ProductListPageComponent
+    ProductListPageComponent,
+    ProductDetailsComponent
   ],
   imports: [
     CommonModule,

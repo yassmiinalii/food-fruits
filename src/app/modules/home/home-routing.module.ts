@@ -1,3 +1,4 @@
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ProductListPageComponent } from './pages/product-list-page/product-list-page.component';
 import { BrandsPageComponent } from './pages/brands-page/brands-page.component';
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductListPageComponent
+  },
+  {
+    path: 'product/:id',
+    component: ProductDetailsComponent
   }
 
 ];

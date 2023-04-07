@@ -1,12 +1,14 @@
-<div class="cad product-card ">
-  <div class="product-image">
+<div class="cad product-card " >
+  <div class="product-image" [routerLink]="'/product/1'" >
     <img src="https://via.placeholder.com/300x300" alt="Product Image">
   </div>
   <div class="product-info p-3">
-    <h3 class="product-title">{{'Product Title' | translate}}</h3>
+    <div class="" routerLink="/product/1">
+      <h3 class="product-title">{{'Product Title' | translate}}</h3>
     <div class="product-price">
       <span class="offer-price">{{'KWD' | translate}} 10.00</span>
       <span class="regular-price">{{'KWD' | translate}} 15.00</span>
+    </div>
     </div>
     <div class="product-options row gap-3 flex-nowrap  px-2">
       <div class="add-to-cart-container col-10 row ">

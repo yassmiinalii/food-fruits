@@ -25,12 +25,16 @@
   "Our App Now": "تطبيقنا الآن",
   "Available on Google Play and App Store": "متوفر على جوجل بلاي وأبل ستور",
   "DOWNLOAD_APP": "حمل التطبيق",
-  "follow us on": "تابعنا على",
+  "follow us on": "تابعنا على:",
   "Quick LInks": "روابط سريعة",
   "Join our newsletter": "انضم إلى النشرة الإخبارية",
   "Subscribe now to get latest updates and offers.": "اشترك الآن للحصول على آخر التحديثات والعروض.",
   "price": "السعر",
   "CATEGORY": "القسم",
   "FILTER": "فلتر",
-  "ADD_TO_CART": "أضف إلى السلة"
+  "ADD_TO_CART": "اضف للسلة",
+  "Related Items": "العناصر ذات الصلة",
+  "More Details": "المزيد من التفاصيل",
+  "Cart details": "تفاصيل السلة",
+  "send": "ارسال"
 }

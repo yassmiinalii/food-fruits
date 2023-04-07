@@ -25,13 +25,17 @@
   "our App Now": "Our App Now",
   "Available on Google Play and App Store": "Available on Google Play and App Store",
   "DOWNLOAD_APP": "Download App",
-  "follow us on": "Follow us on",
+  "follow us on": "Follow us on:",
   "Quick LInks": "Quick Links",
   "Join our newsletter": "Join our newsletter",
   "price": "Price",
   "Subscribe now to get latest updates and offers.": "Subscribe now to get latest updates and offers.",
   "CATEGORY": "Category",
   "FILTER": "Filter",
-  "ADD_TO_CART": "Add to Cart"
+  "More Details": "More Details",
+  "Related Items": "Related Items",
+  "ADD_TO_CART": "Add to Cart",
+  "Cart details": "Cart details",
+  "send": "Send"
 
 }

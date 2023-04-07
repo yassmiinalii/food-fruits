@@ -1,0 +1,92 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+
+.product-details-container {
+  .product-info-container {
+    background-color: white;
+
+    .product-info {
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .share-favorite-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .btn {
+          &:hover {
+            background-color: $primary-color-light
+          }
+        }
+      }
+    }
+
+    .product-description {
+      font-weight: 300;
+      font-size: 1rem;
+      color: $gray3;
+    }
+
+    .product-price {
+      .price{
+        font-weight: 700;
+      font-size: 2rem;
+      color: $primary-color
+      }
+      .price-before{
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: $gray3;
+        text-decoration: line-through;
+
+      }
+    }
+    .product-quantity{
+      border: 1px solid $gray4;
+      padding: 0.5rem;
+      .quantity-input{
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        &:focus {
+          outline: none;
+          background-color: $primary-color-light;
+        }
+      }
+
+      .btn{
+        border: none ;
+        padding: 0.4rem 0.8rem;
+        margin: 0 6px;
+        &:hover{
+          border: none ;
+          color: $primary-color ;
+          background-color: $light-gray1 ;
+        }
+      }
+      .btn:disabled , .btn.disabled, fieldset:disabled .btn{
+        border: none ;
+        color: $gray3;
+      }
+    }
+
+    .btn-add-to-cart{
+      border-radius: 0;
+    padding: 0.9rem 4rem;
+    color: white;
+    }
+  }
+
+
+  .more-details-description{
+    font-size: 1rem;
+    color: $gray3;
+    font-weight: 300;
+  }
+
+
+
+}

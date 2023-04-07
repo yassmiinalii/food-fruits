@@ -1,0 +1,69 @@
+<div class="product-details-container container section">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="product-image w-100">
+        <img class="img-fluid" src="https://via.placeholder.com/600x550" alt="{{product.name.ar}}">
+      </div>
+    </div>
+    <div class="col-md-6 product-info-container p-5">
+      <div class="product-info">
+        <div class="header  ">
+          <div class="text">
+            <h3>{{product.name[translate.currentLang]}}</h3>
+            <p class="product-description">{{product.description[translate.currentLang]}}</p>
+          </div>
+          <div class="share-favorite-container ">
+            <button class=" btn share mb-2">
+              <i class="bi bi-share"></i>
+            </button>
+            <button class=" btn favorite">
+              <i class="bi bi-heart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="store d-flex gap-2 mt-3">
+            <i class="bi bi-shop"></i>
+            <p>{{product.brand[translate.defaultLang]}}</p>
+
+        </div>
+        <div class="product-price d-flex gap-3 align-items-center mt-3">
+          <P class="price">{{product.price}} {{'KWD' |translate}}</P>
+          <P class="price-before">{{1100.000}} {{'KWD' |translate}}</P>
+        </div>
+        <div class="action d-flex gap-4 mt-3 ">
+
+          <div class="product-quantity">
+            <button class="minus quantity-btns btn " (click)="decreaseProductCount()" [disabled]="quantity === 1" >
+              <i class="bi bi-dash-lg"></i>
+            </button>
+            <input class="quantity-input" type="number" min="1" max="10" [(ngModel)]="quantity">
+            <button class="plus quantity-btns btn" (click)="increaseProductCount()">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+          <div class="add-to-cart">
+            <button class="btn btn-secondary btn-add-to-cart" (click)="addToCart()">{{'ADD_TO_CART' | translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ... -->
+  <div class="row mt-5">
+    <div class="col-12 ">
+      <div class="product-description-container">
+        <h4>{{'More Details' | translate}}</h4>
+        <p class="more-details-description pe-4 mt-4">{{product.moreInfo[translate.currentLang]}}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- .. -->
+  <div class="row mt-5">
+    <h4>Related Items</h4>
+    <div class="col-6 col-md-3 mt-4" *ngFor="let item of [1,2,3,4,1,2,3,4]">
+      <app-product-card ></app-product-card>
+    </div>
+  </div>
+</div>
+
