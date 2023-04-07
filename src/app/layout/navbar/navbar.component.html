@@ -63,18 +63,18 @@
         </ul>
       </div>
         <div class="cart-fav-profile-icon-container">
-          <div class="cart-icon nav-icon ">
+          <button (click)="onCartOpen()" class="cart-icon nav-icon ">
             <i class="bi bi-cart" ></i>
-            <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'CART'|translate}}</div>
-          </div>
-          <div class="fav-icon nav-icon ">
+            <p class="icon-text" [class.display-icons-text]="hiddenContent"  >{{'CART'|translate}}</p>
+          </button>
+          <button class="fav-icon nav-icon ">
             <i class="bi bi-heart"></i>
             <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'FAVORITES'|translate}}</div>
-          </div>
-          <div class="profile-icon nav-icon ">
+          </button>
+          <button class="profile-icon nav-icon ">
             <i class="bi bi-person"></i>
             <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'LOGIN'| translate}}</div>
-          </div>
+          </button>
         </div>
       </div>
 </nav>

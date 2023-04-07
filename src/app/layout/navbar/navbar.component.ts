@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CategoriesService } from 'src/app/modules/home/services/categories.service';
 import { ICategory } from 'src/app/shared/models/iCategory';
-
+import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { CartOffcanvasComponent } from '../cart-offcanvas/cart-offcanvas.component';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -11,13 +12,15 @@ import { ICategory } from 'src/app/shared/models/iCategory';
 })
 export class NavbarComponent  implements OnInit {
   hiddenContent: boolean ;
+  openCartOffcanvas: boolean;
   categoriesList: ICategory[];
   currentLanguage: string;
   menuItems: { title: { ar: string; en: string; }; path: string; }[];
   constructor (
     private NavbarServiceService: NavbarServiceService,
     private categoriesService: CategoriesService,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private offcanvasService: NgbOffcanvas
     ) {
       this.initCurrentLanguage();
    }
@@ -56,6 +59,16 @@ export class NavbarComponent  implements OnInit {
   getCategoriesList(){
     this.categoriesList =  this.categoriesService.getCategories();
   }
+
+
+
+  onCartOpen(){
+    console.log('onCartOpen');
+    const offcanvasRef = this.offcanvasService.open(CartOffcanvasComponent , { position: 'end' });
+     offcanvasRef.componentInstance.name = 'World';
+  }
+
+
 
 }
 
