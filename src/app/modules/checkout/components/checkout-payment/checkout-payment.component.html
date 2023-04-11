@@ -1,0 +1,41 @@
+<div class="container " *ngIf="paymentForm">
+  <h6>{{'Payment' | translate}}</h6>
+  <div class="payment-method row  gap-2 flex-nowrap p-3">
+    <div class="method col" [class.active]="paymentMethod === 1">
+      <span class="method-label"> {{"Credit card" | translate}}</span>
+      <i class="bi bi-credit-card"></i>
+    </div>
+    <div class="method col" [class.active]="paymentMethod === 2">
+      <span class="method-label"> {{"Cash" | translate}}</span>
+      <i class="bi bi-cash-stack"></i>
+    </div>
+    <div class="method col" [class.active]="paymentMethod === 3">
+      <span class="method-label"> {{"Knet" | translate}}</span>
+      <img *ngIf="paymentMethod !== 3" src="../../../../../assets/icons/k-net.png" alt="">
+      <img *ngIf="paymentMethod === 3" src="../../../../../assets/icons/k-net-active.png" alt="">
+    </div>
+    <div class="method col" [class.active]="paymentMethod === 4">
+      <span class="method-label"> {{"Apple Pay" | translate}}</span>
+      <i class="bi bi-apple"></i>
+    </div>
+  </div>
+  <form class="mt-4" [formGroup]="paymentForm"  >
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Cardholder Name" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Card Number" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="full-name d-flex gap-3">
+    <div class="input-group  mb-3  ">
+      <input type="text" class="form-control" placeholder="Month" aria-label="Month" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group  mb-3  ">
+      <input type="text" class="form-control" placeholder="Year" aria-label="Year" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="CVC" aria-label="CVC" aria-describedby="basic-addon1">
+    </div>
+   </div>
+  </form>
+</div>

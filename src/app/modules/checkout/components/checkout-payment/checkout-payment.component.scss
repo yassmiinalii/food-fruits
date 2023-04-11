@@ -1,0 +1,29 @@
+
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+.payment-method {
+  display: flex;
+  .method {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: $gray3;
+    border: 1px solid gray;
+    padding: .5rem;
+    .method-label {
+      font-size: .8rem;
+    }
+    i{
+      font-size: 1.5rem ;
+    }
+    &:hover{
+      background-color: $primary-color-light;
+    }
+  }
+  img{
+    width: 32px;
+  }
+  .active{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}

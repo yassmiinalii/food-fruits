@@ -1,0 +1,48 @@
+@import "../../../../assets/style/scss-utils/_variables.scss";
+.product-cart-card-container{
+  padding: 1rem;
+  border-bottom: 1px solid #E0E0E0;
+
+  .icon{
+    cursor: pointer;
+    padding: 4px;
+    &:hover{
+      background-color: $primary-color-light;
+    }
+  }
+  .icon-delete{
+    color: $gray3;
+  }
+  .icon-fav{
+    color: $secondary-color;
+  }
+
+  .product-quantity{
+    border: 1px solid $gray4;
+    padding: 4px;
+    .quantity-input{
+      border: none;
+      background-color: transparent;
+      text-align: center;
+      &:focus {
+        outline: none;
+        background-color: $primary-color-light;
+      }
+    }
+
+    .btn{
+      border: none ;
+      padding: 2px 4px;
+      margin: 0 3px;
+      &:hover{
+        border: none ;
+        color: $primary-color ;
+        background-color: $light-gray1 ;
+      }
+    }
+    .btn:disabled , .btn.disabled, fieldset:disabled .btn{
+      border: none ;
+      color: $gray3;
+    }
+  }
+}

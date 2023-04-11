@@ -1,0 +1,25 @@
+<div class="container " *ngIf="addressForm">
+  <h6>{{'Address' | translate}}</h6>
+  <form class="mt-4" [formGroup]="addressForm"  >
+   <div class="full-name d-flex gap-2">
+    <div class="input-group  mb-3  ">
+      <input type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+   </div>
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Apartment, suite, etc (optional)" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="City" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+   <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Mark Land" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  </form>
+</div>

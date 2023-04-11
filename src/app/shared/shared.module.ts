@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductCartComponent } from './components/product-cart/product-cart.component';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -18,31 +20,33 @@ export function createTranslateLoader(http: HttpClient) {
 
 const UIModules = [
   NgbAccordionModule,
+  NgbPaginationModule,
+  NgbAlertModule,
 ];
 
 @NgModule({
   declarations: [
-    FilterComponent
+    FilterComponent,
+    ProductCartComponent
   ],
   imports: [
     CommonModule,
-    NgbAccordionModule,
     RouterModule,
     HttpClientModule,
     AngularSvgIconModule.forRoot() ,
     FormsModule,
-    NgbPaginationModule,
-    NgbAlertModule,
-    TranslateModule
+    TranslateModule,
+    ...UIModules
 
   ],
   exports:[
-    NgbAccordionModule,
     RouterModule,
     AngularSvgIconModule,
     TranslateModule,
     FilterComponent,
+    ProductCartComponent,
     FormsModule,
+    ...UIModules
 
   ],
   providers:[TranslateStore ]

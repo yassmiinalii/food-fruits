@@ -16,6 +16,13 @@ const routes: Routes = [
         (a) => a.HomeModule
       ),
   },
+  {
+    path: 'checkout',
+    loadChildren: () =>
+      import('./modules/checkout/checkout.module').then(
+        (a) => a.CheckoutModule
+      ),
+  },
 ];
 
 @NgModule({

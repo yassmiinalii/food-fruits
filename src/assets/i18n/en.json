@@ -36,6 +36,36 @@
   "Related Items": "Related Items",
   "ADD_TO_CART": "Add to Cart",
   "Cart details": "Cart details",
-  "send": "Send"
+  "send": "Send",
+  "Continue to checkout": "Continue to checkout",
+  "Checkout" : "Checkout",
+  "Address" : "Address",
+  "Shipping" : "Shipping",
+  "Payment" : "Payment",
+  "Order Summary" : "Order Summary",
+  "Order Details" : "Order Details",
+  "Order ID" : "Order ID",
+  "Order Date" : "Order Date",
+  "Order Status" : "Order Status",
+  "Subtotal": "Subtotal",
+  "Total": "Total",
+  "Enter coupon code here": "Enter coupon code here",
+  "Apply": "Apply",
+  "Continue to shipping": "Continue to shipping",
+  "Continue to payment": "Continue to payment",
+  "Place Order": "Place Order",
+  "Add new address": "Add new address",
+  "Payment Details": "Payment Details",
+  "Debit card/  Credit card": "Debit card/  Credit card",
+  "Cash": "Cash",
+  "Apple Pay": "Apple Pay",
+  "Knet": "Knet",
+  "Credit card": "Credit card",
+  "order placed successfully": "Order placed successfully",
+  "Order number:": "Order number: ",
+  "Go to home": "Go to home"
+
+
+
 
 }

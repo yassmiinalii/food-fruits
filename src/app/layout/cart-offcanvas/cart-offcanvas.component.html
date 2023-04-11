@@ -5,9 +5,12 @@
 		<button type="button" *ngIf="translate.currentLang === 'en'"  class="btn-close" aria-label="Close" 	(click)="activeOffcanvas.dismiss('Cross click')"></button>
 	</div>
 	<div class="offcanvas-body">
-
-
+    <app-product-cart></app-product-cart>
 	</div>
+	<div class="offcanvas-footer p-3">
+    <button class="btn btn-primary w-100 "> {{'Continue to checkout' | translate}}</button>
+	</div>
+
 </div>
 
 

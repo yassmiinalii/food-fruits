@@ -1,0 +1,57 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+.checkout-container{
+  .checkout-stepper{
+    display: flex;
+    gap: 1rem;
+    .step{
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      color: $black;
+      gap: 0.5rem;
+      .line{
+        width: 40px;
+        height: 2px;
+        padding: 0;
+        margin: 0;
+        background-color: $black;
+      }
+    }
+    .active{
+      color: $primary-color;
+      .line{
+        background-color: $primary-color;
+      }
+    }
+  }
+  .order-body{
+    background-color: white;
+    .coupon{
+
+      height: 50px;
+      .input-group-text{
+        margin-inline-start: -1px;
+
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+      .coupon-input{
+        border-radius: 0 !important;
+    }
+    }
+  }
+
+  .summery{
+    .sub-total{
+      border-bottom: 1px solid $gray4;
+    }
+  }
+
+  .btn-checkout{
+    padding: 0.8rem;
+    border-radius: 0px;
+  }
+}
