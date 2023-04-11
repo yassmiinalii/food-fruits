@@ -17,14 +17,22 @@
       </div>
     </div>
  </div>
- <div  *ngIf="step !== 3" class="order-body p-5 mt-5 row flex-nowrap">
-   <div  class="order-details col-5 ">
+ <div  *ngIf="step !== 3" class="order-body p-5 mt-5 row ">
+  <div class="col-12 col-md-6">
+    <div class="checkout-step ">
+      <app-checkout-address *ngIf="step === 1"></app-checkout-address>
+      <app-checkout-payment *ngIf="step === 2"></app-checkout-payment>
+
+    </div>
+  </div>
+  <div class="col-12 col-md-1"></div>
+   <div  class="order-details col-12 col-md-5 ">
     <h6>{{'Orders' | translate}}</h6>
     <app-product-cart></app-product-cart>
     <app-product-cart></app-product-cart>
     <div class="coupon input-group mt-5 ">
       <input type="text" class="form-control coupon-input" placeholder="{{'Enter coupon code here' | translate}}" aria-label="Username" aria-describedby="basic-addon1">
-      <span class="input-group-text btn btn-primary" id="basic-addon1">{{'Apply' | translate}}</span>
+      <span class="input-group-text btn btn-secondary" id="basic-addon1">{{'Apply' | translate}}</span>
     </div>
     <div class="summery mt-5">
       <div class="sub-total d-flex justify-content-between">
@@ -32,24 +40,19 @@
         <p>  100 {{'KWD' | translate }}</p>
       </div>
 
-      <div class="total d-flex justify-content-between green mt-3">
+      <div class="total d-flex justify-content-between green my-3">
         <p>{{'Total' | translate}}</p>
         <p> 100 {{'KWD' | translate }}</p>
       </div>
-    </div>
-  </div>
-
-  <div class="col-1"></div>
-  <div class="col-6">
-    <div class="checkout-step ">
-      <app-checkout-address *ngIf="step === 1"></app-checkout-address>
-      <app-checkout-payment *ngIf="step === 2"></app-checkout-payment>
-      <div class="actions-container mt-5 p-2">
+      <div class="actions-container my-5 ">
         <button *ngIf="step === 1" (click)="onStepTwo()" class=" btn btn-primary btn-checkout w-100 ">{{'Continue to payment' | translate}} </button>
         <button *ngIf="step === 2" (click)="onStepThree()" class=" btn btn-primary btn-checkout w-100 ">{{'Place Order' | translate}} </button>
       </div>
     </div>
   </div>
+
+
+
  </div>
   <div *ngIf="step === 3" class="order-body  my-5 ">
     <div class="checkout-step ">

@@ -8,7 +8,7 @@
     <app-product-cart></app-product-cart>
 	</div>
 	<div class="offcanvas-footer p-3">
-    <button class="btn btn-primary w-100 "> {{'Continue to checkout' | translate}}</button>
+    <button class="btn btn-primary w-100 " routerLink="/checkout" (click)="activeOffcanvas.dismiss('Cross click')"> {{'Continue to checkout' | translate}}</button>
 	</div>
 
 </div>
