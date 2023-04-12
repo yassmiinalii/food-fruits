@@ -1,0 +1,46 @@
+@import "../../../../assets/style/scss-utils/_variables.scss";
+.profile-menu-container {
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  .menu-item{
+    padding: .8rem;
+    cursor: pointer;
+    &:hover{
+      color: $primary-color;
+      background-color: $primary-color-light;
+    }
+  }
+
+  .active{
+
+    color: $primary-color;
+    background-color: $primary-color-light;
+  }
+}
+
+.my-account-body{
+  background-color: white;
+  border-radius: 12px;
+}
+
+
+.account-layout{
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    .profile-menu-container{
+      flex-direction: row;
+      width: 100%;
+      border-radius: 0;
+      justify-content: space-between;
+    }
+    .my-account-body{
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,27 @@
+@import "../../../../../../assets/style/scss-utils/_variables.scss";
+.address-card{
+  padding: 1rem;
+  border: 1px solid #EBEBEB;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  .address-container{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+    }
+
+  }
+  .body{
+    color: $gray3;
+  }
+  .actions{
+    .btn{
+      padding: 8px;
+    }
+  }
+
+  .gray{
+    color: #B9B9C5;;
+  }
+}

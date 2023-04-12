@@ -1,0 +1,28 @@
+<div class="orders-container">
+  <h6 class="mb-4">{{'My Orders' | translate}}</h6>
+
+
+    <table class="table ">
+      <thead>
+        <tr>
+          <th scope="col">{{'ID' | translate}} </th>
+          <th scope="col">{{'Date' | translate}} </th>
+          <th scope="col">{{'Items' | translate}} </th>
+          <th scope="col">{{'Status' | translate}} </th>
+          <th scope="col">{{'Price' | translate}} </th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orderList; index as i">
+          <td>{{order.id}}</td>
+          <td class="date" >{{order.date}}</td>
+          <td>{{order.items}}</td>
+          <td class="status">{{order.status}}</td>
+          <td>{{order.total}} {{"KWD" | translate}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+</div>

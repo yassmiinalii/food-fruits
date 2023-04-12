@@ -1,0 +1,20 @@
+<div class="address-card d-flex justify-content-between">
+  <div class="body">
+    <div class="address-container gap-4">
+      <p>{{'Address' | translate}}</p>
+      <p>{{address.address}}</p>
+    </div>
+    <div class="phone-container d-flex gap-4 align-items-center">
+      <p>{{'Phone' | translate}}</p>
+      <p class="ps-2 green">{{address.phone}}</p>
+    </div>
+  </div>
+  <div class="actions flex justify-content-end">
+    <button class="btn ">
+      <svg-icon [svgStyle]="{ 'width.px': 24 }" src="../../../../../../assets/icons/icon-delete.svg" ></svg-icon>
+    </button>
+    <button class="btn ">
+      <i class="bi bi-pencil-square gray"></i>
+    </button>
+  </div>
+</div>

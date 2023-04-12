@@ -21,17 +21,17 @@
   </div>
   <form class="mt-4" [formGroup]="paymentForm"  >
    <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Cardholder Name" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" class="form-control" placeholder="{{'Cardholder Name' | translate}}" aria-label="Username" aria-describedby="basic-addon1">
   </div>
    <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Card Number" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" class="form-control" placeholder="{{'Card Number' | translate}}" aria-label="Username" aria-describedby="basic-addon1">
   </div>
   <div class="full-name d-flex gap-3">
     <div class="input-group  mb-3  ">
-      <input type="text" class="form-control" placeholder="Month" aria-label="Month" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="{{'month'| translate}}" aria-label="Month" aria-describedby="basic-addon1">
     </div>
     <div class="input-group  mb-3  ">
-      <input type="text" class="form-control" placeholder="Year" aria-label="Year" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="{{'year' | translate}}" aria-label="Year" aria-describedby="basic-addon1">
     </div>
     <div class="input-group mb-3">
       <input type="text" class="form-control" placeholder="CVC" aria-label="CVC" aria-describedby="basic-addon1">

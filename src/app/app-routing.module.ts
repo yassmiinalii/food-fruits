@@ -23,6 +23,13 @@ const routes: Routes = [
         (a) => a.CheckoutModule
       ),
   },
+  {
+    path: 'my-account',
+    loadChildren: () =>
+      import('./modules/user/user.module').then(
+        (a) => a.UserModule
+      ),
+  },
 ];
 
 @NgModule({

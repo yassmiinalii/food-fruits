@@ -11,7 +11,6 @@ import { CategoryListSectionComponent } from './sections/category-list-section/c
 import { BrandsListSectionComponent } from './sections/brands-list-section/brands-list-section.component';
 import { BrandItemCardComponent } from './components/brand-item-card/brand-item-card.component';
 import { BestSellersSectionComponent } from './sections/best-sallers-section/best-sellers-section.component';
-import { ProductCardComponent } from './components/product-card/product-card.component';
 import { AdBannerComponent } from './sections/ad-banner/ad-banner.component';
 import { FutureProductsComponent } from './sections/future-products/future-products.component';
 import { DownloadAppComponent } from './sections/download-app/download-app.component';
@@ -29,7 +28,6 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
     BrandsListSectionComponent,
     BrandItemCardComponent,
     BestSellersSectionComponent,
-    ProductCardComponent,
     AdBannerComponent,
     FutureProductsComponent,
     DownloadAppComponent,
@@ -41,8 +39,8 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    SharedModule
   ],
   exports:[
     HomePageComponent,

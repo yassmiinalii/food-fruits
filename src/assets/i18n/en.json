@@ -63,9 +63,34 @@
   "Credit card": "Credit card",
   "order placed successfully": "Order placed successfully",
   "Order number:": "Order number: ",
-  "Go to home": "Go to home"
-
-
-
-
+  "Go to home": "Go to home",
+  "Name": "Name",
+  "Email": "Email",
+  "Phone": "Phone",
+  "Password": "Password",
+  "new password": "New Password",
+  "confirm password": "Confirm Password",
+  "Sign in": "Sign in",
+  "Sign up": "Sign up",
+  "Forgot password?": "Forgot password?",
+  "City": "City",
+  "apartment": "Apartment",
+  "landmark": "Landmark",
+  "Apartment, suite, etc (optional)": "Apartment, suite, etc (optional)",
+  "Cardholder Name": "Cardholder Name",
+  "Card Number": "Card Number",
+  "Expiration Date": "Expiration Date",
+  "CVV": "CVV",
+  "year": "Year",
+  "month": "Month",
+  "birthday":"Birthday",
+  "My Profile": "My Profile",
+  "save": "Save",
+  "My Orders": "My Orders",
+  "My Addresses": "My Addresses",
+  "ID": "ID",
+  "Date": "Date",
+  "Status": "Status",
+  "Items": "Items",
+  "My Favorites": "My Favorites"
 }

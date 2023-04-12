@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -27,7 +28,8 @@ const UIModules = [
 @NgModule({
   declarations: [
     FilterComponent,
-    ProductCartComponent
+    ProductCartComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,7 @@ const UIModules = [
     TranslateModule,
     FilterComponent,
     ProductCartComponent,
+    ProductCardComponent,
     FormsModule,
     ...UIModules
 

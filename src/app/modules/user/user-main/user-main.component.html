@@ -1,0 +1,19 @@
+<div class="container section  ">
+  <div class="row  gap-3 flex-nowrap account-layout" >
+    <div class="profile-menu-container col-3">
+      <div *ngFor="let item of menuList; let i = index">
+        <div class="menu-item"
+             (click)="onStep(i)"
+             [class.active]="step === i ">
+          <span>{{item.name[translate.currentLang]}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-9 my-account-body p-4">
+      <app-profile *ngIf="step === 0"></app-profile>
+      <app-address *ngIf="step === 1"></app-address>
+      <app-orders *ngIf="step === 2"></app-orders>
+      <app-favorites *ngIf="step === 3"></app-favorites>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+.table > :not(caption) > * > * {
+  padding: 1.5rem;
+}
+
+.date{
+  color: $gray3;
+}
+
+.status{
+  color: $secondary-color;
+}
