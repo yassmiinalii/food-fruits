@@ -27,56 +27,56 @@ export class FooterService {
         en: 'Best Offers',
         ar: 'أفضل العروض'
       },
-      path: '/offers'
+      path: '/products'
     },
     {
       title: {
         en: 'best sellers',
         ar: 'أفضل البائعين'
       },
-      path: '/sellers'
+      path: '/products'
     },
     {
       title: {
         en: 'Future products',
         ar: 'المنتجات المستقبلية'
       },
-      path: '/future-products'
+      path: '/products'
     },
     {
       title: {
         en: 'account',
         ar: 'الحساب'
       },
-      path: '/account'
+      path: '/my-account'
     },
     {
       title: {
         en: 'cart',
         ar: 'سلةالمشتريات'
       },
-      path: '/cart'
+      path: '/checkout'
     },
     {
       title: {
         en: 'favorites',
         ar: 'المفضلة'
       },
-      path: '/favorites'
+      path: '/my-account'
     },
     {
       title: {
         en: 'orders',
         ar: 'الطلبات'
       },
-      path: '/orders'
+      path: '/my-account'
     },
     {
       title: {
         en: 'adresses',
         ar: 'العناوين'
       },
-      path: '/addresses'
+      path: '/my-account'
     },
     {
       title: {

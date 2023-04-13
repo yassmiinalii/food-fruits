@@ -1,0 +1,38 @@
+@import "../../../../../assets/style/scss-utils/_variables.scss";
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.description {
+  font-size: 16px;
+  color: $gray3;
+  line-height: 26px;
+
+}
+
+.forget-password {
+  cursor: pointer;
+  font-size: 14px;
+  color: $gray3;
+  line-height: 26px;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
+
+.privacy {
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  color: $gray3;
+  line-height: 26px;
+
+}

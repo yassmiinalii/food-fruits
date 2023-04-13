@@ -92,5 +92,19 @@
   "Date": "Date",
   "Status": "Status",
   "Items": "Items",
-  "My Favorites": "My Favorites"
+  "My Favorites": "My Favorites",
+  "Welcome Back": "Welcome Back",
+  "Login with email": "Login with email",
+  "Sign in to continue": "Sign in to continue",
+  "Enter your email:": "Enter your email:",
+  "Enter your Password:": "Enter your Password:",
+  "Forget Password": "Forget Password?",
+  "new customer?": "New customer?",
+  "Enter your name:": "Enter your name:",
+  "Enter your phone:": "Enter your phone:",
+  "welcome": "Welcome",
+  "By clicking you confirm that you accept our": "By clicking you confirm that you accept our",
+  " Terms & CONDITION AND PRIVACY POLICY": "Terms & Condition and Privacy Policy",
+  "Reset Password": "Reset Password",
+  "Enter your email address and we 'Il send you a link to reset your password": "Enter your email address and we 'Il send you a link to reset your password"
 }

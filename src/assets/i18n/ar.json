@@ -94,6 +94,20 @@
   "Date": "التاريخ",
   "Status": "الحالة",
   "Items": "العناصر",
-  "My Favorites": "المفضلة"
+  "My Favorites": "المفضلة",
+  "Welcome Back": "مرحباً بعودتك",
+  "Login with email": "تسجيل الدخول بالبريد الإلكتروني",
+  "Sign in to continue": "سجل الدخول للمتابعة",
+  "Enter your email": "أدخل بريدك الإلكتروني",
+  "Enter your password": "أدخل كلمة المرور",
+  "Forget Password": "نسيت كلمة المرور؟",
+  "new customer?": "عميل جديد؟",
+  "Enter your name": "أدخل اسمك",
+  "Enter your phone": "أدخل رقم هاتفك",
+  "welcome": "مرحباً",
+  "By clicking you confirm that you accept our": "بالنقر فوق زر التسجيل فإنك توافق على",
+  " Terms & CONDITION AND PRIVACY POLICY": "الشروط والأحكام وسياسة الخصوصية",
+  "Reset Password": "إعادة تعيين كلمة المرور",
+  "Enter your email address and we 'Il send you a link to reset your password": "أدخل عنوان بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور الخاصة بك"
 
 }

@@ -10,6 +10,13 @@
   background-color: #313b33 !important;
 }
 
+::ng-deep.modal-backdrop {
+
+  background-color: #131714 !important;
+}
+
 ::ng-deep.offcanvas-backdrop.show {
   opacity: 0.3;
 }
+
+

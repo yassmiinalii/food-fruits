@@ -1,10 +1,15 @@
+// import { LoginComponent } from './../../core/auth/login/login.component';
 import { NavbarServiceService } from '../services/navbar-service.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CategoriesService } from 'src/app/modules/home/services/categories.service';
 import { ICategory } from 'src/app/shared/models/iCategory';
-import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import {  NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { CartOffcanvasComponent } from '../cart-offcanvas/cart-offcanvas.component';
+import { Router } from '@angular/router';
+import { LoginComponent } from 'src/app/core/auth/components/login/login.component';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -16,11 +21,14 @@ export class NavbarComponent  implements OnInit {
   categoriesList: ICategory[];
   currentLanguage: string;
   menuItems: { title: { ar: string; en: string; }; path: string; }[];
+  isLoggedIn: boolean ;
   constructor (
     private NavbarServiceService: NavbarServiceService,
     private categoriesService: CategoriesService,
     public translate: TranslateService,
-    private offcanvasService: NgbOffcanvas
+    private offcanvasService: NgbOffcanvas,
+    private modalService: NgbModal,
+    private router: Router
     ) {
       this.initCurrentLanguage();
    }
@@ -63,10 +71,28 @@ export class NavbarComponent  implements OnInit {
 
 
   onCartOpen(){
-    console.log('onCartOpen');
     const offcanvasRef = this.offcanvasService.open(CartOffcanvasComponent , { position: 'end' });
      offcanvasRef.componentInstance.name = 'World';
   }
+
+  onMyAccountClick(){
+    if(this.isLoggedIn){
+      this.router.navigate(['/my-account']);
+    }
+    else{
+      this.openLoginModal();
+    }
+  }
+
+  openLoginModal(){
+    const modalRef = this.modalService.open(LoginComponent, { centered: true });
+    modalRef.componentInstance.name = 'World';
+    modalRef.result.then((result) => {
+     this.isLoggedIn = result;
+    }
+    );
+  }
+
 
 
 

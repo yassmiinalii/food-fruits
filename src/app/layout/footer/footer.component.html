@@ -25,7 +25,7 @@
         <h4 class="mb-3">{{"Quick LInks"| translate}}</h4>
         <div class="row links-section ">
           <div class="col-sm-6 col-md-4  mb-2 link-item" *ngFor="let item of linksList">
-            <span class="" >{{item.title[translate.currentLang]}}</span>
+            <span class="" [routerLink]="item.path" >{{item.title[translate.currentLang]}}</span>
           </div>
         </div>
 

@@ -10,6 +10,7 @@ import { HomeModule } from './modules/home/home.module';
 import { HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateStore } from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { CoreModule } from './core/core.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,7 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
     NgbModule,
     SharedModule,
     LayoutModule,
-    HomeModule,
+    CoreModule,
     TranslateModule.forChild(
       {
         loader: {

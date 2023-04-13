@@ -71,7 +71,7 @@
             <i class="bi bi-heart"></i>
             <div class="icon-text" [class.display-icons-text]="hiddenContent">{{'FAVORITES'|translate}}</div>
           </button>
-          <button class="profile-icon nav-icon " routerLink="/my-account">
+          <button class="profile-icon nav-icon " (click)="onMyAccountClick()">
             <i class="bi bi-person"></i>
             <div class="icon-text" [class.display-icons-text]="hiddenContent"  >{{'LOGIN'| translate}}</div>
           </button>

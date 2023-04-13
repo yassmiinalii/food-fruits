@@ -12,7 +12,7 @@ export class NavbarServiceService {
     {title: {ar: 'الرئيسية', en: 'Home'}, path: '/home'},
     {title: {ar: 'العلامات التجارية', en: 'Brands'}, path: '/brands'},
     {title: {ar: 'الأكثر مبيعًا', en: 'Best sellers'}, path: '/products'},
-    {title: {ar: 'المنتجات المستقبلية', en: 'products'}, path: '/futureProducts'},
+    {title: {ar: 'المنتجات المستقبلية', en: 'products'}, path: '/products'},
     {title: {ar: 'أفضل العروض', en: 'Best Offers'}, path: '/products'},
   ];
 

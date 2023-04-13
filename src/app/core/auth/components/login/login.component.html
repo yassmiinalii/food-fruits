@@ -1,0 +1,100 @@
+<div class="login" *ngIf="mode === 'login'">
+  <div class="modal-header p-0">
+    <div class="img">
+      <img class="img-fluid" src="../../../../../assets/imgs/login.png" alt="login">
+    </div>
+  </div>
+  <div class="modal-body" lang="{{'LANG'| translate}}" dir="{{'DIR'|translate}}">
+    <h5 class="mt-4">{{'Welcome Back' | translate}}</h5>
+    <p class="description mb-4 mt-2">{{'Sign in to continue' | translate}}</p>
+    <div class="email-password">
+      <div class="form-group my-4">
+        <input type="email" class="form-control" id="email" placeholder="{{'Enter your email'| translate}}" [(ngModel)]="email">
+      </div>
+      <div class="form-group my-4">
+        <input type="password" class="form-control" id="password" placeholder="{{'Enter your password' | translate}}" [(ngModel)]="password">
+      </div>
+    </div>
+    <div class="d-flex justify-content-end" (click)="onGoForgotPassword()">
+      <span class="forget-password" >{{'Forget Password' | translate}}</span>
+    </div>
+    <div class="footer mt-5 d-flex flex-column align-items-center mb-4 ">
+        <button class="btn btn-primary btn-block px-5" (click)="login()">{{'Login' | translate}}</button>
+        <div>
+          <button class="btn mt-3" (click)="onGoToSignUp()">
+            {{'new customer?' | translate}}
+            <span class="green">{{'Sign Up' | translate}}</span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+</div>
+<div class="signUp" *ngIf="mode === 'signUp'">
+  <div class="modal-header p-0">
+    <div class="img">
+      <img class="img-fluid" src="../../../../../assets/imgs/login.png" alt="login">
+    </div>
+  </div>
+  <div class="modal-body" lang="{{'LANG'| translate}}" dir="{{'DIR'|translate}}">
+    <h5 class="mt-4">{{'welcome' | translate}}</h5>
+    <p class="description mb-4 mt-2">{{'Sign in to continue' | translate}}</p>
+    <div class="name-phone-email-password">
+      <div class="form-group my-4">
+        <input type="text" class="form-control" id="name" placeholder="{{'Enter your name'| translate}}" >
+      </div>
+      <div class="form-group my-4">
+        <input type="text" class="form-control" id="phone" placeholder="{{'Enter your phone'| translate}}" >
+      </div>
+      <div class="form-group my-4">
+        <input type="email" class="form-control" id="email" placeholder="{{'Enter your email'| translate}}" >
+      </div>
+      <div class="form-group my-4">
+        <input type="password" class="form-control" id="password" placeholder="{{'Enter your password' | translate}}" >
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <span class="privacy" >{{'By clicking you confirm that you accept our' | translate}}
+        <span class="green">{{' Terms & CONDITION AND PRIVACY POLICY' | translate}}</span>
+      </span>
+    </div>
+    <div class="footer mt-5 d-flex flex-column align-items-center mb-4 ">
+        <button class="btn btn-primary btn-block px-5" (click)="onSignUp()">{{'SIGN_UP' | translate}}</button>
+        <div>
+          <button class="btn mt-3" (click)="onBackToLogin()">
+            {{'new customer?' | translate}}
+            <span class="green">{{'LOGIN' | translate}}</span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+</div>
+<div class="login" *ngIf="mode === 'forgotPassword'">
+  <div class="modal-header p-0">
+    <div class="img">
+      <img class="img-fluid" src="../../../../../assets/imgs/login.png" alt="login">
+    </div>
+  </div>
+  <div class="modal-body" lang="{{'LANG'| translate}}" dir="{{'DIR'|translate}}">
+    <h5 class="mt-4">{{'Reset Password' | translate}}</h5>
+    <p class="description mb-4 mt-2">{{"Enter your email address and we 'Il send you a link to reset your password" | translate}}</p>
+    <div class="email-password">
+      <div class="form-group my-4">
+        <input type="email" class="form-control" id="email" placeholder="{{'Enter your email'| translate}}" [(ngModel)]="email">
+      </div>
+
+    </div>
+
+    <div class="footer mt-5 d-flex flex-column align-items-center mb-4 ">
+        <button class="btn btn-primary btn-block px-5" (click)="login()">{{'send' | translate}}</button>
+        <div>
+          <button class="btn mt-3" (click)="onGoToSignUp()">
+            {{'new customer?' | translate}}
+            <span class="green">{{'Sign Up' | translate}}</span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+</div>
